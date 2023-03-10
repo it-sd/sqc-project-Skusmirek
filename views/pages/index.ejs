@@ -1,39 +1,65 @@
 <%- include('../partials/header.ejs') %>
-
 <!DOCTYPE html>
 <html>
-<head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
+<title>Seth's Quizzes</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="../lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <style>
-body,h1 {font-family: "Raleway", sans-serif;
-          text-align: center;}
-body, html {height: 100%}
-.bgimg {
-  background-color: black;
-}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-navbar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
 </style>
-</head>
 <body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    <a href="/">Home</a> 
-    <a href="/about"> About</a> 
-    <a href="/health">Health</a> 
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">Seths Quizzes</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">An index Page that was supposed to implement a quiz API but is now much simplier due to final project changes!</p>
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css - The template I obtained this from</a>
+<!-- Navbar -->
+<ul class="w3-navbar w3-blue w3-card-2 w3-top w3-left-align w3-large">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  </li>
+
+  <li class="w3-hide-small"><a href="/" class="w3-padding-large w3-hover-white">Home</a></li>
+  <li class="w3-hide-small"><a href="/about" class="w3-padding-large w3-hover-white">About</a></li>
+</ul>
+
+
+
+<!-- Header -->
+<div class="w3-container w3-blue w3-center w3-padding-hor-128">
+  <h1 class="w3-margin w3-jumbo">Seth's Quizzes</h1>
+  <p class="w3-xlarge">Final project for SQC</p>
+</div>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-hor-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Quizzes</h1>
+      <h5 class="w3-padding-hor-32">Here are a few quizzes down below</h5>
+
+      <p class="w3-text-grey">Is where they would be if I has any. Check the about page for more information on what this project was going to be.</p>
+    </div>
   </div>
 </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-hor-64 w3-center w3-opacity">  
+ <p>Powered by <a href="default.asp.html" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 
 </body>
 </html>
