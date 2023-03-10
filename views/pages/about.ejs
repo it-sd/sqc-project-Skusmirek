@@ -1,22 +1,39 @@
 <%- include('../partials/header.ejs') %>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/cite.css">
-  <title>about</title>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif;
+          text-align: center;}
+body, html {height: 100%}
+.bgimg {
+  background-color: black;
+}
+</style>
 </head>
 <body>
-  <a class="nav" href="/">Home</a>
-  <a class="nav" href="/about">About</a>
 
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    <a href="/">Home</a> 
+    <a href="/about"> About</a> 
+    <a href="/health">Health</a> 
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">About</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">Again this was supposed to be a quiz website. You could pick from multiple Quizzes and do them.</p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css - The template I obtained this from</a>
+  </div>
+</div>
 
-  <h1>
-    about page
-  </h1>
-  
 </body>
 </html>
