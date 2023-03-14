@@ -11,3 +11,8 @@ A color scheme I may incorporate into my website would be some grey, and greyish
 
 
 ![Screenshot 2023-03-03 010132](https://user-images.githubusercontent.com/124025687/222655058-113e7ed8-a621-478b-b68a-fa1d04f6bf3f.png)
+
+Update 2
+--
+
+I have changed the color scheme of my website to be a simple blue and white. I have used a css template for my website since the final has changed a bit. If I understood more and was able to actually make the quiz api work, I would have made my own version of the website.
